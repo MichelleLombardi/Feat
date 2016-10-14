@@ -1,0 +1,393 @@
+header {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/Hero-min2.png);
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/Hero-min2.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+body,
+h1,
+header,
+li,
+p {
+    margin: 0;
+    border: 0 none #fff;
+    padding: 0
+}
+
+h1{
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 160%;
+    word-spacing: 2px
+}
+
+.wrapper__logo {
+    position: absolute;
+    left: 22%;
+    top: -15%;
+    z-index: 100
+}
+
+.form__logo {
+    display: flex;
+    z-index: 100;
+    width: 120px;
+    height: 120px
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+body {
+    background-color: #ebeced;
+    color: #3f4652;
+    line-height: 1.4;
+    font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 90%;
+    text-align: left;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+}
+
+
+.row {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto
+}
+
+.header:after,
+.header__menu:after,
+.header__form:after {
+    content: '';
+    clear: both
+}
+
+.header__menu {
+    float: left
+}
+
+.menu__item {
+    display: inline-block;
+    float: left
+}
+
+.menu__item__button {
+    border: 0;
+    background: none;
+    font-size: 14px;
+    display: inherit;
+    color: rgba(255, 255, 255, .8);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    top: 5%
+}
+
+.menu__item__button:hover {
+    color: #fff
+}
+
+.menu__item__button:visited {
+    color: #fff
+}
+
+.header__form {
+    float: right
+}
+
+.header__form__input {
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #919191;
+    margin: 1px;
+    background: rgba(255, 255, 255, .1);
+    padding: 9px;
+    color: #fff;
+    outline: none;
+    transition: background-color .2s ease;
+    float: left;
+    font-family: inherit
+}
+
+.header__form__input[type=text] {
+    width: 200px
+}
+
+.header__form__input[type=password] {
+    width: 140px
+}
+
+.header__form__input:focus {
+    border: 2px solid #e2dfa2;
+    -webkit-text-fill-color: #e2dfa2;
+    color: #e2dfa2;
+    margin: 0
+}
+
+.header__form__input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #222 inset;
+    -webkit-text-fill-color: #fff
+}
+
+.header__form__input+.header__form__input {
+    margin-left: 10px
+}
+
+.header__form__input+.header__form__input:focus {
+    margin-left: 9px
+}
+
+.header__form__input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, .5)
+}
+
+.header__form__input:hover::-webkit-input-placeholder,
+.header__form__input:focus::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, .7)
+}
+
+.header__form__submitButton,
+.header__form__submitOptionsButton,
+.header__form__secondaryButton,
+.form__submitButton,
+.form__submitButton1 {
+    font-size: 14px;
+    line-height: 1.2;
+    box-sizing: border-box;
+    color: #fff;
+    float: left;
+    border: 2px solid transparent;
+    outline-width: 0;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold
+}
+
+.form__submitButton1 {
+    background: #92AAC7;
+    color: rgba(255, 255, 255, .8);
+    margin: 1px 0 1px 10px;
+    padding: 9px 18px;
+}
+
+.form__submitButton1:hover {
+    background: #91A6BF;
+    color: #fff;
+}
+
+.header__form__secondaryButton {
+    padding: 10px 18px;
+    margin-left: 10px;
+    background-color: #222;
+    background-color: rgba(0, 0, 0, .4);
+    color: rgba(255, 255, 255, .8);
+    border-radius: 5px;
+    outline-width: 0;
+    transition: background-color .2s ease
+}
+
+.header__form__secondaryButton:visited {
+    color: #fff!important
+}
+
+.header__form__secondaryButton:hover {
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+}
+
+.header__form__secondaryButton:focus {
+    border-color: rgba(0, 0, 0, .2)
+}
+
+.header__form__submitButton,
+.form__submitButton {
+    background: #92aac7;
+    margin: 1px 0 1px 10px;
+    padding: 9px 18px
+}
+
+.header__form__submitButton:hover {
+    background-color: #91A6BF
+}
+
+.header__form__submitButton:focus,
+.header__form__submitButton:active {
+    border-color: #83a82b
+}
+
+.signupFormContainerIe11MinheightHackWrapper {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.signupFormContainer {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    min-height: 90vh;
+    box-sizing: border-box;
+    padding: 60px 0
+}
+
+.signupFormContainer__inner {
+    position: relative;
+    z-index: 10;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.signupForm {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.signupForm--collapsed .signupForm__signupButtons {
+    opacity: 1;
+    max-height: 200px;
+    position: relative;
+}
+
+.signupForm--collapsed .signupForm__emailForm {
+    opacity: 0;
+    max-height: 0
+}
+
+.signupForm--collapsed .form__footButtons {
+    opacity: 0;
+    max-height: 0
+}
+
+.round {
+    border-radius: 25px;
+    background: #fcfcfc;
+    padding: 20px;
+    -webkit-box-shadow: 1px 3px 23px 4px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 1px 3px 23px 4px rgba(0, 0, 0, 0.36);
+    box-shadow: 1px 3px 23px 4px rgba(0, 0, 0, 0.36)
+}
+
+.signupForm__form {
+    margin-top: 50px;
+    min-width: 255px;
+    transition: padding .5s ease, -webkit-transform .05s ease;
+    transition: transform .05s ease, padding .5s ease;
+    transition: transform .05s ease, padding .5s ease, -webkit-transform .05s ease
+}
+
+.signupForm__signupButtons {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.sm-edit-box {
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    margin: 1px;
+    rgba(255, 255, 255, .1);
+    padding: 9px;
+    color: #555;
+    outline: none;
+    transition: background-color .2s ease;
+    float: left;
+    font-family: inherit;
+    width: 99%;
+    text-align: center;
+    text-transform: none
+}
+
+.sm-edit-box:focus {
+    border: 2px solid #e2dfa2;
+    color: #dad68b;
+    margin: 0
+}
+
+.form__submitButton {
+    background: #ED5752;
+    color: rgba(255, 255, 255, .8);
+    margin: 1px 0 1px 10px;
+    padding: 9px 18px;
+    width: 95%
+}
+
+.form__submitButton:hover {
+    background: #ec4c46;
+    color: #fff;
+}
+
+.signupFormContainer__quotes {
+    padding-left: 40px;
+    width: 330px
+}
+
+.quotes {
+    color: #fff;
+    text-shadow: 0 1px 2px #444
+}
+
+.quotes__quote--important {
+    font-size: 22px;
+    margin-top: 0;
+    font-weight: 600
+}
+
+.quotes__quote--important small {
+    font-weight: 400;
+    opacity: .8
+}
+
+.quotes__quote {
+    font-size: 16px;
+    margin-top: 30px
+}
+
+.quotes__cite {
+    display: block;
+    opacity: .5;
+    font-size: 14px
+}
+
+.quotes__cite:before {
+    content: 'â€“ '
+}
