@@ -1,0 +1,31 @@
+@media only screen and (min-width: 1280px) {
+    .row {
+        width: 75em;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .canva-demo-wrapper {
+        float: left;
+        display: inline;
+        position: relative;
+        min-height: 1px;
+        word-wrap: break-word;
+        margin-right: 1.5625%;
+        margin-left: 1.5625%;
+        width: 46.875%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .feature-descritption {
+        float: left;
+        display: inline;
+        position: relative;
+        min-height: 1px;
+        word-wrap: break-word;
+        margin-right: 1.5625%;
+        margin-left: 1.5625%;
+        width: 46.875%;
+    }
+}

@@ -1,8 +1,9 @@
 @media only screen and (max-width: 1200px) {
-    .row {
+    .bopage,
+    .tpage {
         padding: 0 2%
     }
-    .header__menu {
+    .link_know {
         display: none
     }
 }
@@ -43,7 +44,7 @@
     .header__logInLink {
         display: block
     }
-    .header__form {
+    .prh {
         display: none
     }
 }
