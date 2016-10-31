@@ -26,6 +26,42 @@ h3 {
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 1.30435em;
+    text-align: left
+}
+
+.item-icon:before {
+    content: "";
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: none;
+    line-height: 1em;
+    position: relative;
+    top: .125em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: 'canva-icon';
+}
+
+.fill-icon {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00c4cc;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    transition: opacity .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+    transition: opacity .2s ease-in-out, transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
 }
 
 .f1c {
@@ -67,21 +103,21 @@ h3 {
 }
 
 .docn {
-    width: 43%;
+    width: 36%;
     float: left;
     text-align: left;
 }
 
 .usn {
     float: left;
-    width: 19%;
+    width: 21%;
     text-align: center;
 }
 
 .din {
     text-align: right;
     float: left;
-    width: 19%;
+    width: 21%;
 }
 
 .tc {
@@ -95,6 +131,7 @@ h3 {
     line-height: 1.5em;
     transition: color .3s;
     margin: 0;
+    text-align: left
 }
 
 html,
@@ -396,7 +433,12 @@ pre {
     top: .4375em;
     left: 53%;
     margin-left: -2.1875em;
-    cursor: pointer
+    cursor: pointer;
+    transition: top .3s ease;
+}
+
+.form__logo3:hover {
+    top: .7375em;
 }
 
 .imgl3 {
@@ -475,6 +517,79 @@ pre {
     margin-left: 1.5625%;
     width: 38.54167%;
     padding-left: 3.125em;
+}
+
+.feature-icon {
+    width: 3.125em;
+    height: 3.125em;
+    position: absolute;
+    top: .25em;
+    text-align: center;
+    overflow: hidden;
+    left: 0;
+    background: #fff;
+    border-radius: 50%;
+    color: #5cc5ef;
+}
+
+.item-icon {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-size: 2.5em;
+    line-height: 1.35em;
+    z-index: 9;
+    position: relative;
+}
+
+.item-icon:before {
+    top: 0 !important;
+}
+
+.acs {
+    color: #00c4cc;
+    text-decoration: none;
+    transition: all .3s;
+    position: relative;
+    padding-left: 4.375em;
+    display: block;
+    min-height: 5em;
+    z-index: 2;
+}
+
+.item-border-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    transition: border .2s .1s;
+    border-radius: 50%;
+    border: 2px solid #ebeced;
+}
+
+.acs:after {
+    opacity: 0;
+    transition: opacity .3s 0s;
+    content: '';
+    background: linear-gradient(to top, #00c4cc 0, rgba(255, 255, 255, 0) 100%);
+    width: 1px;
+    height: 1.25em;
+    position: absolute;
+    bottom: -1.25em;
+    left: 1.5625em;
+}
+
+.acs:before {
+    opacity: 0;
+    transition: opacity .3s 0s;
+    content: '';
+    background: #00c4cc;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: .25em;
+    left: 1.5625em;
 }
 
 .triangulo_inf {

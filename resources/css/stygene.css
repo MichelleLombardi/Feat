@@ -1,0 +1,383 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    font-size: 90%;
+    text-align: left;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)), url(img/Hero-min3.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)), url(img/Hero-min3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    border: 0 none #fff;
+    padding: 0;
+}
+
+.authPage {
+    min-height: 100%;
+    perspective: 400px;
+}
+
+header {
+    margin: 0;
+    border: 0 none #fff;
+    padding: 0;
+}
+
+.tpage {
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    z-index: 11;
+    box-sizing: border-box;
+}
+
+.tpage:after,
+.prh:after {
+    content: '';
+    clear: both;
+}
+
+.bopage {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.fpage {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, .2));
+    width: 100%;
+    z-index: 11;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.fpage:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+
+.df {
+    color: rgba(255, 255, 255, .4);
+}
+
+.concen {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 85%;
+    background: #292d35;
+    margin-top: 1%;
+}
+
+.prh5 {
+    margin: 0;
+    border: 0 none #fff;
+    padding: 0;
+    float: right
+}
+
+.form__submitButton15,
+.header__logInLink5 {
+    font-size: 14px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, .8);
+    transition: background .5s ease;
+    transition: color .5s ease;
+    line-height: 1.2;
+    box-sizing: border-box;
+    float: right;
+    outline-width: 0;
+    background: #a1be95;
+    margin: 1px 0 1px 10px;
+    padding: 8px 18px;
+    text-decoration: none;
+}
+
+.header__logInLink5,
+.form__submitButton15:hover {
+    background: #8fb181;
+    border: 2px solid transparent;
+    color: #fff;
+}
+
+.header__form__secondaryButton5 {
+    font-size: 14px;
+    line-height: 1.2;
+    box-sizing: border-box;
+    padding: 10px 18px;
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, .4);
+    color: rgba(255, 255, 255, .8);
+    border-radius: 5px;
+    outline-width: 0;
+    transition: background-color .7s ease;
+    transition: color .5s ease;
+    text-decoration: none;
+    float: left;
+    border: 2px solid transparent;
+}
+
+.header__form__secondaryButton5:visited {
+    color: #fff!important;
+}
+
+.header__form__secondaryButton5:hover {
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+}
+
+.header__form__secondaryButton5:focus {
+    border-color: rgba(0, 0, 0, .2)
+}
+
+.header__logInLink5 {
+    padding: 9px 38px;
+    float: right;
+    display: none;
+}
+
+.signupFormContainer__quotes5 {
+    left: 20%;
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    transform: translate(0px, 0%);
+}
+
+.ta {
+    border-radius: 5px 5px 0 0;
+    overflow-y: visible;
+    overflow-x: hidden;
+    opacity: 1;
+    text-align: justify;
+    width: 100%;
+    height: 40em !important;
+    background: #f2f2f2;
+    padding-top: 2.5%;
+    padding-left: 2%;
+    word-spacing: 1px;
+    word-wrap: break-word;
+}
+
+.header__logInLink5 {
+    padding: 9px 38px;
+    float: right;
+    display: none;
+}
+
+.form__logo5 {
+    float: left;
+    margin-left: 0.5%;
+    margin-top: 0.5%
+}
+
+.imgl5 {
+    width: 80px;
+    height: 80px;
+}
+
+.signupFormContainer__quotes52 {
+    width: 18%;
+    height: 60%;
+    margin-left: 1%;
+    margin-right: 1%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    transform: translate(0px, 0%);
+}
+
+.up-chat {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    top: 0;
+    border-radius: 5px 5px 0 0;
+    background: rgba(255, 255, 255, .5);
+    width: 100%;
+    height: 10%;
+    cursor: pointer
+}
+
+.mid-chat {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    background: white;
+}
+
+.down-chat {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: 2px;
+}
+
+.punto {
+    width: 5%;
+    height: 30%;
+    border-radius: 50%;
+    background-color: green;
+    margin: auto
+}
+
+.titlep {
+    margin: auto;
+    color: #f2f2f2;
+    font-style: oblique
+}
+
+.bchat {
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 0 5px 0 0;
+    border: 1px none;
+    margin: auto;
+    cursor: pointer
+}
+
+.tadc {
+    width: 98.5%;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    opacity: 1;
+    word-spacing: 1px;
+    word-wrap: break-word;
+}
+
+.bdc {
+    border: 1px rgba(255, 255, 255, .5);
+    background: #f2f2f2;
+    width: 35px;
+    height: 49px;
+    font-size: 20px;
+    color: #ed5752;
+    bottom: 0;
+    position: relative
+}
+
+.iz {
+    float: left
+}
+
+.der {
+    float: right
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-button {
+    width: 20px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bfbfbf;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #999999;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+
+::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #595959;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.pabo {
+    top: 0;
+    margin-left: 1.5%;
+    text-align: center;
+    height: 100%;
+    width: 10%;
+    display: flex
+}
+
+.lice {
+    background-color: #e2dfa2;
+    position: absolute;
+    width: 2px;
+    height: 30%;
+    margin-left: 38px;
+}
+
+#b1e {
+    position: relative;
+    margin-top: 47%;
+    margin-left: 8.5%;
+}
+
+#b2e {
+    position: relative;
+    margin-top: 105%;
+    margin-left: -38%;
+}
+
+.descg {
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    background: #8ec2d7;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.8em;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.descg:hover {
+    background: #67aeca;
+}
+
+.modal {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%
+}
