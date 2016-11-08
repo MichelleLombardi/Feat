@@ -1,22 +1,17 @@
 <html lang="es-ES">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="resources/css/stygenp.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/queriesp.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="apple-mobile-web-app-title" content="Feat">
-    <meta name="application-name" content="Feat">
-    <meta name="theme-color" content="#ffffff">
     <title>Feat: Crea y edita documentos en forma colaborativa online</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta http-equiv="content-language" content="es-ES"> </head>
+    <meta http-equiv="content-language" content="es-ES">
+    <script src="vendors/css/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendors/js/jquery.min.js"></script>
+    <script src="resources/js/feat.js"></script>
+</head>
 
 <body class="authPage">
     <!-----INICIO PAGINA PRINCIPAL----->
@@ -38,9 +33,9 @@
                         </div>
                         <h1 class="titlef">¿Primera vez en Feat? Regístrate</h1>
                         <div class="dir">
-                            <input id="login-name" maxlength="15" class="sm-edit-box" placeholder="Nombre">
-                            <input id="login-lastname" maxlength="15" class="sm-edit-box" placeholder="Apellido">
-                            <input id="login-username" maxlength="320" type="email" class="sm-edit-box" placeholder="Correo Electrónico">
+                            <input id="login-name" maxlength="15" class="sm-edit-box" placeholder="Nombre" onfocus="checkName(this)">
+                            <input id="login-lastname" maxlength="15" class="sm-edit-box" placeholder="Apellido" required>
+                            <input id="login-username" maxlength="320" type="email" class="sm-edit-box" placeholder="Correo Electrónico" required>
                             <br>
                             <br>
                             <button class="form__submitButton">Regístrate</button>
@@ -49,8 +44,12 @@
                 </div>
                 <div class="signupFormContainer__quotes quotes">
                     <p class="quotes__quote--important">Feat te permite colaborar en la edición de documentos, estés donde estés y de forma gratuita</p>
-                    <p class="quotes__quote"> <q>Feat permite el manejo de documentos colaborativos de forma sencilla para sus usuarios</q> <cite class="quotes__cite">- Michelle Lombardi</cite> </p>
-                    <p class="quotes__quote"> <q>Con Feat puedes invitar a tus amigos a realizar documentos de una manera rápida e interactiva</q> <cite class="quotes__cite">- Jose Lopez</cite> </p>
+                    <p id="m1" style="display:none" class="quotes__quote"> <q>Feat permite el manejo de documentos colaborativos de forma sencilla para sus usuarios</q> <cite class="quotes__cite">- Michelle Lombardi</cite> </p>
+                    <p id="m2" style="display:none" style="display:none" class="quotes__quote"> <q>Feat es sencillo, práctico y novedoso. Cambia la rutina de tu trabajo, ahorra tiempo y comparte</q> <cite class="quotes__cite">- Michelle Lombardi</cite> </p>
+                    <p id="m3" style="display:none" class="quotes__quote"> <q>Con Feat puedes colaborar en tiempo real, en cualquier lugar y con cualquier grupo de personas en la creación y edición de documentos</q> <cite class="quotes__cite">- Michelle Lombardi</cite> </p>
+                    <p id="j1" class="quotes__quote"> <q>Feat es una herramienta sumamente práctica que permite trabajar con documentos colaborativos eficazmente sin importar dónde te encuentres</q> <cite class="quotes__cite">- Jose Lopez</cite> </p>
+                    <p id="j2" style="display:none" class="quotes__quote"> <q>La sencillez de Feat reúne, en un mismo lugar, los principios básicos de compartir documentos y trabajabar en equipo</q> <cite class="quotes__cite">- Jose Lopez</cite> </p>
+                    <p id="j3" style="display:none" class="quotes__quote"> <q>Con Feat puedes invitar a tus amigos a realizar documentos de una manera rápida e interactiva</q> <cite class="quotes__cite">- Jose Lopez</cite> </p>
                 </div>
             </div>
         </div>

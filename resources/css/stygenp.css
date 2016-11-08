@@ -9,7 +9,7 @@ body {
     text-align: left;
     background: -webkit-linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)), url(img/Hero-min2.png);
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)), url(img/Hero-min2.png);
-    background-position: 0 0;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -250,8 +250,8 @@ p {
 }
 
 .signupFormContainer__quotes {
-    padding-left: 40px;
-    width: 295px;
+    padding-left: .2%;
+    width: 10%;
 }
 
 .quotes {
@@ -363,6 +363,12 @@ p {
     top: -50px;
     left: 50%;
     margin-left: -50px;
+    cursor: pointer;
+    transition: top .3s ease;
+}
+
+.form__logo:hover {
+    top: -46px;
 }
 
 .imgl {
@@ -391,4 +397,39 @@ p {
     margin: 0;
     border: 0 none #fff;
     padding: 0;
+}
+
+.modal {
+    display: block;
+    /* Hidden by default */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.centrar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*indicamos que el margen izquierdo, es la mitad de la anchura*/
+    margin-left: -200px;
+    /*indicamos que el margen superior, es la mitad de la altura*/
+    margin-top: -150px;
+    border: 3px solid #E8E8E8;
+}
+
+.ventanas {
+    background-color: whitesmoke;
+    border-radius: 4px;
+}
+
+#asd5 {
+    width: 40%;
+    height: 20%;
 }
