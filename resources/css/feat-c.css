@@ -1,0 +1,145 @@
+.container-fluid {
+    box-sizing: border-box;
+    font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-overflow: ellipsis;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-rendering: optimizeLegibility;
+    font-weight: 300;
+    background: #92AAC7;
+    background: linear-gradient(to left top, #5cc5ef 0, #344d90 100%);
+    color: #fff
+}
+
+.tpagec {
+    height: 3.375em;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.footer {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #292d35;
+    color: #787b80;
+    padding-top: 3em;
+    padding-bottom: 1.5em;
+    bottom: 0;
+    height: 20%
+}
+
+.abso {
+    position: absolute
+}
+
+.alto {
+    height: 72%
+}
+
+.alto-max {
+    height: 100%
+}
+
+.mid-alto {
+    height: 40%
+}
+
+.largo {
+    width: 100%
+}
+
+.izq {
+    float: left
+}
+
+.der {
+    float: right
+}
+
+.center {
+    text-align: center
+}
+
+.rela {
+    position: relative
+}
+
+.imglc {
+    margin-top: .5em;
+    width: 6.25em;
+    height: 6.25em;
+    cursor: pointer;
+    transition: margin-top .3s ease;
+}
+
+.imglc:hover {
+    margin-top: .8em;
+}
+
+#d1 {
+    margin-top: 15%;
+    overflow: hidden
+}
+
+h2 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 3.125em;
+    line-height: 1.08em;
+    margin-bottom: .48em;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.pp {
+    font-size: 1.25em;
+    line-height: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+#text1 {
+    padding-right: 2em;
+    padding-left: 5em
+}
+
+figure {
+    line-height: 0;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, .2) 0 0 20px 0;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    text-align: center;
+    opacity: 1;
+}
+
+.img1 {
+    border: 0;
+    max-width: 100%;
+    height: 100% !important;
+}
+
+.h2-si {
+    margin-bottom: .3125em;
+    color: #000;
+    font-size: 2em;
+    line-height: 1.35em;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: .75em;
+    font-weight: 300;
+}
+
+.lb {
+    display: block
+}
+
+.canvas-inner {
+    width: 100%;
+    background: #f8f9f9;
+    max-width: 35em;
+    height: 26.25em;
+}
