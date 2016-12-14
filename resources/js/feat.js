@@ -1,188 +1,335 @@
-$(document).ready(function () {
-    var m1 = $("#m1") //parrafo 1 de Michelle
+$(document).ready(() => {
+    var regLogName = $("#login-name") //input nombre
         
-        , m2 = $("#m2") //parrafo 2 de Michelle
+        , regLogLastn = $("#login-lastname") //input apellido
         
-        , m3 = $("#m3") //parrafo 3 de Michelle
+        , row1 = $("#r1") //row de los input nombre y apellido
         
-        , j1 = $("#j1") //parrafo 1 de Jose
+        , regLogEmail = $("#login-username") //input email
         
-        , j2 = $("#j2") //parrafo 2 de Jose
+        , row2 = $("#r2") //row del input email
         
-        , j3 = $("#j3") //parrafo 3 de Jose
+        , regLogc1 = $("#login-pass1") //input contraseña 1
         
-        , signinEmail = $("#el") //input email del header
+        , row3 = $("#r3") //row del input contraseña 1
         
-        , signinPass = $("#pl") // input password del header
+        , regLogc2 = $("#login-pass2") //input contraseña 2
         
-        , accede = $("#accl"); // boton del header accede
-    var Parrafos = function () {
-        var i = 0;
-        setInterval(function () {
+        , row4 = $("#r4") //row del input contraseña 2
+        
+        , row5 = $("#r5") //row del boton registrate
+        
+        , registrar = $("#r5b") // boton registrate
+        
+        , row6 = $("#r6") //row del boton continuar registro
+        
+        , conregistrar = $("#r6b") //boton continuar registro
+        
+        , logEmail = $("#enter-email") //input email login
+        
+        , logPass = $("#enter-pass") //input contraseña login
+        
+        , acceder = $("#accede"); //boton para acceder o hacer login
+    //funcion que corrobora que se hayan incluido todos los datos para darle click al boton de registrar
+    var aux1 = false
+        , aux2 = false
+        , aux3 = false
+        , vacio = "";
+
+    function checkReg1() {
+        var regname = regLogName.val();
+        var reglastn = regLogLastn.val();
+        var regemail = regLogEmail.val();
+        if (regname.trim() == vacio) {
+            regLogName.css({
+                "border": "1px solid #d9534f"
+            });
+            aux1 = true;
+        }
+        if (reglastn.trim() == vacio) {
+            regLogLastn.css({
+                "border": "1px solid #d9534f"
+            });
+            aux2 = true;
+        }
+        if (regemail.trim() == vacio) {
+            regLogEmail.css({
+                "border": "1px solid #d9534f"
+            });
+            aux3 = true;
+        }
+    }
+    registrar.click(() => {
+        checkReg1();
+        if (aux1 == false) {
+            if (aux2 == false) {
+                if (aux3 == false) {
+                    row1.css({
+                        "display": "none"
+                    });
+                    row2.css({
+                        "display": "none"
+                    });
+                    row3.css({
+                        "display": "block"
+                    });
+                    row4.css({
+                        "display": "block"
+                    });
+                    row5.css({
+                        "display": "none"
+                    });
+                    row6.css({
+                        "display": "block"
+                    });
+                    //chequear el email
+                }
+                else {
+                    regLogLastn.css({
+                        "border": "1px solid #cccccc"
+                    });
+                    regLogName.css({
+                        "border": "1px solid #cccccc"
+                    });
+                    aux3 = false;
+                }
+            }
+            else {
+                if (aux3 == false) {
+                    regLogName.css({
+                        "border": "1px solid #cccccc"
+                    });
+                    regLogEmail.css({
+                        "border": "1px solid #cccccc"
+                    });
+                    aux2 = false;
+                }
+                else {
+                    regLogName.css({
+                        "border": "1px solid #cccccc"
+                    });
+                    aux2 = false;
+                    aux3 = false;
+                }
+            }
+        }
+        else {
+            if (aux2 == false) {
+                if (aux3 == false) {
+                    regLogLastn.css({
+                        "border": "1px solid #cccccc"
+                    });
+                    regLogEmail.css({
+                        "border": "1px solid #cccccc"
+                    });
+                    aux1 = false;
+                }
+                else {
+                    regLogLastn.css({
+                        "border": "1px solid #cccccc"
+                    });
+                    aux1 = false;
+                    aux3 = false;
+                }
+            }
+            else {
+                if (aux3 == false) {
+                    regLogEmail.css({
+                        "border": "1px solid #cccccc"
+                    });
+                    aux1 = false;
+                    aux2 = false;
+                }
+                else {
+                    aux1 = false;
+                    aux2 = false;
+                    aux3 = false;
+                }
+            }
+        }
+    });
+    //funcion que corrobora que se hayan incluido todos los datos para darle click al boton de continuar con el registro
+    var aux4 = false
+        , aux5 = false;
+
+    function checkReg2() {
+        var regcon1 = regLogc1.val();
+        var regcon2 = regLogc2.val();
+        if (regcon1.trim() == vacio) {
+            regLogc1.css({
+                "border": "1px solid #d9534f"
+            });
+            aux4 = true;
+        }
+        if (regcon2.trim() == vacio) {
+            regLogc2.css({
+                "border": "1px solid #d9534f"
+            });
+            aux5 = true;
+        }
+    }
+    conregistrar.click(() => {
+        checkReg2();
+        if (aux4 == false) {
+            if (aux5 == false) {
+                regLogc1.css({
+                    "border": "1px solid #cccccc"
+                });
+                regLogc2.css({
+                    "border": "1px solid #cccccc"
+                });
+                //se registra
+                alert(regLogName.val() + "," + regLogLastn.val() + "," + regLogEmail.val() + "," + regLogc1.val() + "," + regLogc2.val());
+            }
+            else {
+                regLogc1.css({
+                    "border": "1px solid #cccccc"
+                });
+                aux5 = false;
+            }
+        }
+        else {
+            if (aux5 == false) {
+                regLogc2.css({
+                    "border": "1px solid #cccccc"
+                });
+                aux4 = false;
+            }
+            else {
+                aux4 = false;
+                aux5 = false;
+            }
+        }
+    });
+    //funcion que corrobora que se hayan incluido todos los datos para darle click al boton de acceder
+    var aux6 = false
+        , aux7 = false;
+
+    function checkLogin() {
+        var logemail = logEmail.val();
+        var logcon = logPass.val();
+        if (logemail.trim() == vacio) {
+            logEmail.css({
+                "border": "1px solid #d9534f"
+            });
+            aux6 = true;
+        }
+        if (logcon.trim() == vacio) {
+            logPass.css({
+                "border": "1px solid #d9534f"
+            });
+            aux7 = true;
+        }
+    }
+    acceder.click(() => {
+        checkLogin();
+        if (aux6 == false) {
+            if (aux7 == false) {
+                logEmail.css({
+                    "border": "1px solid #cccccc"
+                });
+                logPass.css({
+                    "border": "1px solid #cccccc"
+                });
+                //se hace login
+                alert(logEmail.val() + "," + logPass.val());
+            }
+            else {
+                logEmail.css({
+                    "border": "1px solid #cccccc"
+                });
+                aux7 = false;
+            }
+        }
+        else {
+            if (aux7 == false) {
+                logPass.css({
+                    "border": "1px solid #cccccc"
+                });
+                aux6 = false;
+            }
+            else {
+                aux6 = false;
+                aux7 = false;
+            }
+        }
+    });
+    //ADICIONAL
+    //funcion para cambio de comentarios
+    var m1 = $("#m1")
+        , m2 = $("#m2")
+        , m3 = $("#m3")
+        , j1 = $("#j1")
+        , j2 = $("#j2")
+        , j3 = $("#j3")
+        , i = 0;
+    var comentarios = () => {
+        setInterval(() => {
             i++;
             if (i == 1) {
-                m1.css({
-                    "display": "block"
-                });
-                j1.css({
-                    "display": "block"
-                });
                 m2.css({
-                    "display": "none"
+                    "display": "block"
                 });
                 m3.css({
                     "display": "none"
                 });
-                j2.css({
+                m1.css({
                     "display": "none"
                 });
+                j2.css({
+                    "display": "block"
+                });
                 j3.css({
+                    "display": "none"
+                });
+                j1.css({
                     "display": "none"
                 });
             }
-            if (i == 2) {
+            else if (i == 2) {
+                m3.css({
+                    "display": "block"
+                });
                 m1.css({
                     "display": "none"
+                });
+                m2.css({
+                    "display": "none"
+                });
+                j3.css({
+                    "display": "block"
                 });
                 j1.css({
                     "display": "none"
                 });
-                m2.css({
-                    "display": "block"
-                });
-                m3.css({
-                    "display": "none"
-                });
                 j2.css({
-                    "display": "block"
-                });
-                j3.css({
                     "display": "none"
                 });
             }
-            if (i == 3) {
-                m3.css({
-                    "display": "block"
-                });
-                j3.css({
-                    "display": "block"
-                });
+            else {
                 m1.css({
-                    "display": "none"
-                });
-                j1.css({
-                    "display": "none"
+                    "display": "block"
                 });
                 m2.css({
                     "display": "none"
                 });
+                m3.css({
+                    "display": "none"
+                });
+                j1.css({
+                    "display": "block"
+                });
                 j2.css({
+                    "display": "none"
+                });
+                j3.css({
                     "display": "none"
                 });
                 i = i - 3;
             }
-        }, 7500);
+        }, 10500);
     }
-    var Fondo = function () {
-        var i = 0;
-        setInterval(function () {
-            i++;
-            if (i == 1) {
-                $(document.body).css({
-                    "background": "-webkit-linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)), url(resources/css/img/Hero-min2.png)"
-                });
-                $(document.body).css({
-                    "background": "linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)), url(resources/css/img/Hero-min2.png)"
-                });
-            }
-            if (i == 2) {
-                $(document.body).css({
-                    "background": "-webkit-linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)), url(resources/css/img/Hero-min3.jpg)"
-                });
-                $(document.body).css({
-                    "background": "linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)), url(resources/css/img/Hero-min3.jpg)"
-                });
-                i = i - 2;
-            }
-        }, 15000);
-    }
-    $(document.body).css({
-        "background": "-webkit-linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)), url(resources/css/img/Hero-min2.png)"
-    });
-    $(document.body).css({
-        "background": "linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)), url(resources/css/img/Hero-min2.png)"
-    });
-    m1.css({
-        "display": "block"
-    });
-    j1.css({
-        "display": "block"
-    });
-    Fondo();
-    Parrafos();
-    //funcion que corrobora que se hayan incluido todos los datos del login
-    var aux1 = false
-        , aux2 = false
-        , vacio = "";
-
-    function checkSignin() {
-        var email = signinEmail.val();
-        var password = signinPass.val();
-        if (email.trim() == vacio) {
-            signinEmail.css({
-                border: "1px solid red"
-            });
-            aux1 = true;
-        }
-        if (password.trim() == vacio) {
-            signinPass.css({
-                border: "1px solid red"
-            });
-            aux2 = true;
-        }
-    }
-});
-accede.click(function () {
-    checkSignin();
-    if (aux1 == false) {
-        if (aux2 == false) {
-            signinEmail.css({
-                border: "1px solid #DBE1EB"
-            });
-            signinPass.css({
-                border: "1px solid #DBE1EB"
-            });
-            console.log("Tratamos de hacer login: ");
-            $.ajax({
-                url: "./login"
-                , type: "POST"
-                , data: {
-                    email: signinEmail.val()
-                    , pass: signinPass.val()
-                }
-                , success: function (data) {}
-                , error: function (err) {
-                    console.log(err);
-                }
-            });
-        }
-        else {
-            aux2 = false;
-            signinEmail.css({
-                border: "1px solid #DBE1EB"
-            });
-        }
-    }
-    else {
-        if (aux2 == false) {
-            aux1 = false;
-            signinPass.css({
-                border: "1px solid #DBE1EB"
-            });
-        }
-        else {
-            aux1 = false;
-            aux2 = false;
-        }
-    }
-}); //fin oclick ACCEDE
+    setTimeout(() => {
+        comentarios();
+    }, 500);
+}); //fin ready

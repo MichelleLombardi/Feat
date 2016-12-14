@@ -1,8 +1,8 @@
 .container-fluid {
     font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
     line-height: 1.4;
-    background: -webkit-linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)), url(img/Hero-min2.png);
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)), url(img/Hero-min2.png);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url(img/Hero-min2.png);
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url(img/Hero-min2.png);
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,6 +18,10 @@
 
 .center {
     text-align: center
+}
+
+.flecha {
+    margin-left: .6em
 }
 
 .footer {
@@ -49,7 +53,7 @@
 
 .quotes__quote {
     font-size: 100%;
-    margin-top: 1em
+    margin-top: 1em;
 }
 
 .quotes__cite {

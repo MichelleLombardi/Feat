@@ -5,21 +5,24 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
     <title>Feat: Crea y edita documentos en forma colaborativa online</title>
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" href="vendors/css/bootstrap/dist/css/bootstrap.min.css">
     <script src="vendors/js/jquery.min.js"></script>
     <script src="vendors/css/bootstrap/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="resources/css/feat-p.css"> </head>
+    <link rel="stylesheet" type="text/css" href="resources/css/feat-p.css">
+    <script src="resources/js/feat.js"></script>
+</head>
 
 <body>
     <div class="container-fluid">
         <div class="row header largo">
-            <div class="col-lg-3 col-md-2 col-sm-2 col-xs-2"> <a class="menu__item__button" href="conocenos.html">Conócenos</a></div>
+            <div class="col-lg-3 col-md-2 col-sm-2 col-xs-2"> <a class="menu__item__button" href="feat-conocenos.html">Conócenos</a></div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ">
-                <input class="header_input" name="email" type="email" placeholder="Correo electrónico"> </div>
+                <input id="enter-email" class="header_input" type="email" placeholder="Correo electrónico"> </div>
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-                <input class="header_input" name="password" type="password" minlength="8" maxlength="12" placeholder="Contraseña"> </div>
+                <input id="enter-pass" class="header_input" type="password" minlength="8" maxlength="12" placeholder="Contraseña"> </div>
             <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 ">
-                <button href="intro.html" type="button" class="btn btn-success largo">Accede</button>
+                <button id="accede" href="intro.html" type="button" class="btn btn-success largo">Accede</button>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><a href="#" class="menu__item__button">¿Has olvidado tu contraseña?</a></div>
         </div>
@@ -41,23 +44,36 @@
                     <div class="col-md-12 col-xs-12 col-sm-12">
                         <h1 class="titlef">¿Primera vez en Feat? Regístrate</h1></div>
                 </div>
-                <div class="row">
+                <div class="row" id="r1">
                     <div class=" col-md-6 col-xs-6 col-sm-6">
                         <input id="login-name" maxlength="15" class="sm-edit-box" placeholder="Nombre"> </div>
                     <div class=" col-md-6 col-xs-6 col-sm-6">
                         <input id="login-lastname" maxlength="15" class="sm-edit-box" placeholder="Apellido"> </div>
                 </div>
-                <div class="row">
+                <div class="row" id="r2">
                     <div class="col-md-12 col-xs-12 col-sm-12">
                         <input id="login-username" maxlength="320" type="email" class="sm-edit-box" placeholder="Correo Electrónico"> </div>
+                </div>
+                <div class="row" id="r3" style="display:none">
+                    <div class="col-md-12 col-xs-12 col-sm-12">
+                        <input id="login-pass1" maxlength="12" minlength="8" type="password" class="sm-edit-box" placeholder="Contraseña"> </div>
+                </div>
+                <div class="row" id="r4" style="display:none">
+                    <div class="col-md-12 col-xs-12 col-sm-12">
+                        <input id="login-pass2" maxlength="12" minlength="8" type="password" class="sm-edit-box" placeholder="Repita la contraseña"> </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 col-xs-12 col-sm-12">
                         <br> </div>
                 </div>
-                <div class="row">
+                <div class="row" id="r5">
                     <div class="col-md-12 col-xs-12 col-sm-12">
-                        <button type="button" class="btn btn-danger spc">Regístrate</button>
+                        <button id="r5b" type="button" class="btn btn-danger spc">Regístrate</button>
+                    </div>
+                </div>
+                <div class="row" id="r6" style="display:none">
+                    <div class="col-md-12 col-xs-12 col-sm-12">
+                        <button id="r6b" type="button" class="btn btn-danger spc">Continuar<span class="ion-arrow-right-c flecha"></span></button>
                     </div>
                 </div>
                 <div class="row">
@@ -73,18 +89,34 @@
                         <p class="quotes__quote--important">Feat te permite colaborar en la edición de documentos, estés donde estés y de forma gratuita</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id="m1">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <p id="m1" class="quotes__quote"> <q>Feat permite el manejo de documentos colaborativos de forma sencilla para sus usuarios</q> <cite class="quotes__cite">- Michelle Lombardi</cite> </p>
-                        <p id="m2" style="display:none" class="quotes__quote"> <q>Feat es sencillo, práctico y novedoso. Cambia la rutina de tu trabajo, ahorra tiempo y comparte</q> <cite class="quotes__cite">- Michelle Lombardi</cite> </p>
-                        <p id="m3" style="display:none" class="quotes__quote"> <q>Con Feat puedes colaborar en tiempo real, en cualquier lugar y con cualquier grupo de personas en la creación y edición de documentos</q> <cite class="quotes__cite">- Michelle Lombardi</cite> </p>
+                        <p class="quotes__quote"> <q>Feat permite el manejo de documentos colaborativos de forma sencilla para sus usuarios</q> <cite class="quotes__cite">- Michelle Lombardi</cite> </p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id="m2" style="display:none">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <p id="j1" class="quotes__quote"> <q>Feat es una herramienta sumamente práctica que permite trabajar con documentos colaborativos eficazmente sin importar dónde te encuentres</q> <cite class="quotes__cite">- Jose Lopez</cite> </p>
-                        <p id="j2" style="display:none" class="quotes__quote"> <q>La sencillez de Feat reúne, en un mismo lugar, los principios básicos de compartir documentos y trabajabar en equipo</q> <cite class="quotes__cite">- Jose Lopez</cite> </p>
-                        <p id="j3" style="display:none" class="quotes__quote"> <q>Con Feat puedes invitar a tus amigos a realizar documentos de una manera rápida e interactiva</q> <cite class="quotes__cite">- Jose Lopez</cite> </p>
+                        <p class="quotes__quote"> <q>Feat es sencillo, práctico y novedoso. Cambia la rutina de tu trabajo, ahorra tiempo y comparte</q> <cite class="quotes__cite">- Michelle Lombardi</cite> </p>
+                    </div>
+                </div>
+                <div class="row" id="m3" style="display:none">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="quotes__quote"> <q>Con Feat puedes colaborar en tiempo real, en cualquier lugar y con cualquier grupo de personas en la creación y edición de documentos</q> <cite class="quotes__cite">- Michelle Lombardi</cite> </p>
+                    </div>
+                </div>
+                <div class="row" id="j1">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="quotes__quote"> <q>Feat es una herramienta que facilita el trabajo con documentos colaborativos eficazmente, sin importar dónde te encuentres</q> <cite class="quotes__cite">- Jose Lopez</cite> </p>
+                    </div>
+                </div>
+                <div class="row" id="j2" style="display:none">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="quotes__quote"> <q>La sencillez de Feat reúne, en un mismo lugar, los principios básicos de compartir documentos y trabajabar en equipo</q> <cite class="quotes__cite">- Jose Lopez</cite> </p>
+                    </div>
+                </div>
+                <div class="row" id="j3" style="display:none">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="quotes__quote"> <q>Con Feat puedes invitar a tus amigos a realizar documentos de una manera rápida e interactiva</q> <cite class="quotes__cite">- Jose Lopez</cite> </p>
                     </div>
                 </div>
             </div>
