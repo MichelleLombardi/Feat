@@ -93,7 +93,7 @@
 
 .sm-edit-box {
     width: 100%;
-    border-radius: 0.3125em;
+    border-radius: 0.357em;
     font-size: 100%;
     border: 1px solid #cccccc;
     background: rgba(255, 255, 255, .1);
@@ -120,7 +120,7 @@
 
 .dialogo {
     background: #fff;
-    border-radius: 0.625em;
+    border-radius: 0.357em;
     font-weight: 400;
 }
 
@@ -132,7 +132,7 @@
     padding: 0.625em;
     text-decoration: none;
     transition: color .5s ease;
-    border-radius: 5px;
+    border-radius: 0.357em;
 }
 
 .menu__item__button:hover {
@@ -142,7 +142,7 @@
 
 .header_input {
     width: 100%;
-    border-radius: 0.3125em;
+    border-radius: 0.357em;
     font-size: 100%;
     border: 1px solid rgba(255, 255, 255, .1);
     background: rgba(255, 255, 255, .1);

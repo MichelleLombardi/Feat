@@ -18,7 +18,7 @@
 
 .mid {
     margin-top: .3em;
-    background: #21252b
+    background: rgba(33, 37, 43, .7)
 }
 
 .footer {
@@ -45,28 +45,38 @@
     margin-left: .6em
 }
 
-.bienv {
-    font-size: 1em;
-    box-sizing: border-box;
-    margin-left: 1em;
-    color: rgba(255, 255, 255, .6);
-    cursor: pointer;
-    transition: color .5s ease;
+.hin {
+    color: #fff;
+    font-size: 1.3em;
+    float: right;
+    margin-top: 1em;
+    margin-right: .5em
 }
 
-.bienv:hover {
-    color: rgba(255, 255, 255, .8);
+.info_u {
+    width: 100%;
+    border-radius: 0.357em 0.357em;
+    border-top: 0.145em solid rgb(231, 85, 44);
+    font-size: 1em;
+    color: rgba(0, 0, 0, .7);
+}
+
+.descp {
+    margin-top: .6em;
+    color: #fff;
+    font-size: .8em;
+    word-spacing: .05em;
+    word-wrap: break-word;
 }
 
 .imgl5 {
-    width: 80px;
-    height: 80px;
+    width: 5.714em;
+    height: 5.714em;
     left: 32%
 }
 
-#b2e {
-    margin-top: -.9em;
-    margin-left: .3em
+.b1e {
+    margin-top: .6em;
 }
 
 .descg {
@@ -75,7 +85,7 @@
     background: #8ec2d7;
     border-radius: 50%;
     color: #fff;
-    font-size: 2em;
+    font-size: 1.8em;
     border-color: transparent;
     cursor: pointer;
 }
@@ -86,7 +96,7 @@
 
 .ta {
     margin-top: 2.5em;
-    border-radius: 5px 5px 0 0;
+    border-radius: 0.357em 0.357em 0 0;
     overflow-y: visible;
     overflow-x: hidden;
     opacity: 1;
