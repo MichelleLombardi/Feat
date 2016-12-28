@@ -46,9 +46,9 @@
                 </div>
                 <div class="row" id="r1">
                     <div class=" col-md-6 col-xs-6 col-sm-6">
-                        <input id="login-name" maxlength="15" class="sm-edit-box" placeholder="Nombre"> </div>
+                        <input id="login-name" minlength="3" maxlength="15" class="sm-edit-box" placeholder="Nombre"> </div>
                     <div class=" col-md-6 col-xs-6 col-sm-6">
-                        <input id="login-lastname" maxlength="15" class="sm-edit-box" placeholder="Apellido"> </div>
+                        <input id="login-lastname" minlength="3" maxlength="15" class="sm-edit-box" placeholder="Apellido"> </div>
                 </div>
                 <div class="row" id="r2">
                     <div class="col-md-12 col-xs-12 col-sm-12">
@@ -77,8 +77,20 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12 col-xs-12 col-sm-12">
-                        <br>
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                        <br> </div>
+                </div>
+                <div class="row" id="alert1" style="display:none">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"> <cite class="an">Para el nombre y apellido debe ingresar entre 3 a 15 letras.</cite></div>
+                </div>
+                <div class="row" id="alert2" style="display:none">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"> <cite class="an">Debe ingresar un correo electrónico válido.</cite> </div>
+                </div>
+                <div class="row" id="alert3" style="display:none">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"> <cite class="an">La contraseña debe contener al menos una letra mayúscula, al menos una letra minúscula y al menos un número o caracter especial. La longitud de la contraseña debe ser como mínimo 8 caracteres y como máximo 12. Deben coincidir ambas contraseñas.</cite> </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                         <br> </div>
                 </div>
             </div>
