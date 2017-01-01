@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>XHR</title>
+    <title>My Social Network</title>
+    <script src="components/jquery/dist/jquery.min.js"></script>
+    <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="components/angular/angular.min.js"></script>
+    <script src="components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="js/XHR.js"></script>
+    <script type="text/javascript" src="js/request.js"></script>
+    <script type="text/javascript" src="js/metryc.js"></script>
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css"> </head>
+
+<body>
+    <button id="request" onclick="onGet()">HTTP METRYC</button>
+    <button id="request" onclick="onGet2()">HTTP NO METRYC</button>
+    <button id="request" onclick="onGet3()">WS METRYC</button>
+    <button id="prueba" onclick="prueba()">prueba</button>
+    <script>
+        var prueba = document.getElementById("prueba");
+        var metryc = new Metryc();
+        var request = {
+            high: {
+                package: 'jmlv.org.Metryc.Test'
+                , method: 'alert(Integer)'
+                , data: ["1"]
+                , callback: 'funcion'
+            }
+        }
+        var request2 = {
+            low: {
+                package: 'jmlv.org.Metryc.Test'
+                , method: 'alert(String)'
+                , data: ["LOW"]
+                , callback: 'funcion'
+            }
+        }
+        metryc.setconnection('ws://localhost:9000/Metryc/metryc');
+        prueba.onclick = function () {
+            for(var i =0; i<200; i++){
+            metryc.sendMessage(JSON.stringify(request));
+            metryc.sendMessage(JSON.stringify(request2));}
+        }
+
+        function funcion(data) {
+            console.log(data);
+        }
+    </script>
+</body>
+
+</html>

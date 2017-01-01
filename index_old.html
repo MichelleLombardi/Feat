@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <script type="text/javascript" src="js/XHR.js"></script>
+</head>
+
+<body>
+    <button onclick="onGet()">GET
+    </button>
+    <button onclick="onPost()">POST
+    </button>
+    <button onclick="onDelete()">DELETE
+    </button>
+    <button onclick="onPut()">PUT
+    </button>
+    <div id="response"></div>
+    <script>
+        var d = document.getElementById('response');
+        var $http = new XHR();
+
+
+        function onGet() {
+            $http.setNameObject("nameObj1");
+            $http.setNameMethod("nameMeth1");
+            $http.addParams([[1,2],1, 2, 1], "integer");
+            $http.addParams([1, 2], ['integer', 'float']);
+            $http.addParams([[[1, 2], ['integer', 'float']], [[1, 2, 3], ["integer", "float", "double"]]]);
+            $http.addParams(1, "integer");
+            var p = {
+                "nameObj": "nameObj1",
+                "nameMeth": "nameMeth1",
+                "struct": ["array", "record", "array_records", "var"],
+                "data": [[[1, 2, 1], "integer"], [[1, 2], ["integer", "float"]], [[[[1, 2], ["integer", "float"]], [[1, 2, 3], ["integer", "float", "double"]]]], [1, "integer"]]
+            }
+            console.log(p)
+            $http.get("./test", {}, function (err, data) {
+                if (err) throw err;
+                console.log(data);
+            });
+        }
+
+        function onPost() {
+            $http.post("./test", "des='prueba'", function (err, data) {
+                if (err) throw err;
+                console.log(data);
+            });
+        }
+
+        function onDelete() {
+            $http.del("./test", {}, function (err, data) {
+                if (err) throw err;
+                console.log(data);
+            });
+        }
+
+        function onPut() {
+            $http.put("./test", {}, function (err, data) {
+                if (err) throw err;
+                console.log(data);
+            });
+        }
+    </script>
+</body>
+
+</html>
