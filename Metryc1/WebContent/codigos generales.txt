@@ -1,0 +1,34 @@
+<div class="modal">
+                    <div class="centrar ventanas" id="asd5">hola</div>
+                </div>
+
+onfocus="checkName(this)"
+
+var passlog = document.getElementById("pl")
+    , emailog = document.getElementById("el")
+    , namelog = document.getElementById("login-name")
+    , lastnlog = document.getElementById("login-lastname")
+    , userlog = document.getElementById("login-username");
+
+function parrafos(x) {
+    setInterval(function () {
+        
+    }, 5000);
+}
+
+function checkName(x) {
+    setInterval(function () {
+        var str = x.value
+            , patt = new RegExp("/^[a-zA-Z]*$/")
+            , res = str.match(patt);
+        alert(res);
+        if (res != true) {
+            console.log(str.charAt(((str.length) - 1)));
+            console.log(res);
+            x.style.background = "yellow";
+        }
+        else {
+            x.style.background = "red";
+        }
+    }, 100);
+}
