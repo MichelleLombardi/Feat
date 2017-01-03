@@ -48,15 +48,15 @@
 .hin {
     color: #fff;
     font-size: 1.3em;
-    float: right;
-    margin-top: 1em;
+    float: left;
+    margin-top: .6em;
+    margin-bottom: .6em;
     margin-right: .5em
 }
 
 .info_u {
-    width: 100%;
     border-radius: 0.357em 0.357em;
-    border-top: 0.145em solid rgb(231, 85, 44);
+    border-top: 0.145em solid rgba(231, 85, 44, .5);
     font-size: 1em;
     color: rgba(0, 0, 0, .7);
 }
@@ -67,6 +67,25 @@
     font-size: .8em;
     word-spacing: .05em;
     word-wrap: break-word;
+}
+
+.part {
+    border-radius: 0.357em 0.357em 0 0;
+    padding: .5em;
+    text-align: center;
+    font-size: 1em;
+    background: rgba(255, 255, 255, .5);
+    color: #fff;
+}
+
+.partd {
+    border-radius: 0 0 0.357em 0.357em;
+    padding-top: .5em;
+    padding-left: .7em;
+    text-align: justify;
+    font-size: .8em;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
 }
 
 .imgl5 {
@@ -90,6 +109,22 @@
     cursor: pointer;
 }
 
+.add {
+    background: #8ec2d7;
+    color: #fff;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 20;
+}
+
+.add:hover {
+    background: #8ec2d7;
+    color: #fff;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 20;
+}
+
 .descg:hover {
     background: #67aeca;
 }
@@ -102,7 +137,7 @@
     opacity: 1;
     text-align: justify;
     width: 100%;
-    height: 80% !important;
+    height: 74% !important;
     background: #f2f2f2;
     padding-top: 2.5%;
     padding-left: 2%;

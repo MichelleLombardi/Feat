@@ -18,51 +18,89 @@
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                 <image class="imgl5 abst" src="resources/img/logo4.png">
             </div>
-            <div class="col-lg-10 col-md-9 col-sm-9 col-xs-7"></div>
+            <div class="col-lg-10 col-md-9 col-sm-9 col-xs-7"> </div>
             <div class="col-lg-1 col-md-2 col-sm-2 col-xs-4">
-                <button class="btn btn-success spc">Salir<span class="ion-log-out out"></span></button>
+                <button ng-click="signout()" class="btn btn-success spc">Salir<span class="ion-log-out out"></span></button>
             </div>
         </div>
         <div class="row mid">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="hin">Hola, <em>Michelle Lombardi</em> </div>
+                    <div class="col-lg-1 col-sm-2 col-md-2 col-xs-2"></div>
+                    <div class="col-lg-11 col-sm-11 col-md-12 col-xs-12">
+                        <div id="editor-n" class="hin"></div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12 center">
-                        <div class="info_u center">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <button title="Grupo de trabajo" class="descg ion-android-contacts b1e"></button>
-                                    <p class="descp">Administrar grupo de trabajo.</p>
+                <div class="row info_u center">
+                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12"> </div>
+                </div>
+                <div class="row" id="escritorio" >
+                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                    <div class="row"><div class="col-lg-12"><br></div></div>
+                    <div class="row"><div class="col-lg-2">
+                            <div class="input-group">
+                                <input id="editor-dname" type="text" class="form-control" placeholder="Titulo del documento..."> <span class="input-group-btn">
+									<button ng-click="create()" class="btn btn-secondary add ion-plus-round" type="button"></button>
+								</span> </div>
+                        </div></div>
+                     <div class="row"><div class="col-lg-12"><br></div></div>   
+                    </div>
+                </div>
+                <div class="row" id="editor" style="display:none">
+                    <div class="col-lg-11 col-sm-11 col-md-11 col-xs-11">
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-2 col-md-2 col-xs-2">
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                        <br> </div>
                                 </div>
-                                <div class="col-lg-3">
-                                    <button title="Guardar archivo" class="descg ion-android-attach b1e"></button>
-                                    <p class="descp">Guardar archivo.</p>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <button title="Grupo de trabajo" class="descg ion-android-contacts b1e"> </button>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <button title="Guardar archivo" class="descg ion-android-attach b1e"> </button>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <button title="Salva el archivo en tu ordenador" class="descg ion-android-archive b1e"> </button>
+                                    </div>
                                 </div>
-                                <div class="col-lg-3">
-                                    <button title="Salva el archivo en tu ordenador" class="descg ion-android-archive b1e"></button>
-                                    <p class="descp">Descargar archivo.</p>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                        <br>
+                                        <br>
+                                        <br> </div>
                                 </div>
-                                <div class="col-lg-3">
-                                    <button title="Ir al escritorio" class="descg ion-android-folder-open b1e"></button>
-                                    <p class="descp">Ir al escritorio de trabajo.</p>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                        <div class="part">Participantes</div>
+                                        <div class="partd">No hay participantes...</div>
+                                    </div>
                                 </div>
                             </div>
-                            <br> </div>
+                            <div class="col-lg-10 col-sm-9 col-md-9 col-xs-9">
+                                <textarea class="ta"> </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-sm-1 col-md-1 col-xs-1 center">
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                <br> </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                <button id="cambiesc" title="Ir al escritorio" class="descg ion-android-folder-open b1e"> </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                <textarea class="ta"></textarea>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"> </div>
         </div>
         <div class="row footer center abst">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">© 2017 Feat.</div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> ©2017 Feat. </div>
         </div>
+    </div>
 </body>
 
 </html>

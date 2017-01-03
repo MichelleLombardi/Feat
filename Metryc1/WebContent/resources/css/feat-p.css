@@ -137,7 +137,8 @@
 
 .menu__item__button:hover {
     text-decoration: none;
-    color: #fff
+    color: #fff;
+    cursor:pointer;
 }
 
 .header_input {

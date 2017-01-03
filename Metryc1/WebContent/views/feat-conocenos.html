@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="vendors/css/bootstrap/dist/css/bootstrap.min.css">
     <script src="vendors/js/jquery.min.js"></script>
     <script src="vendors/css/bootstrap/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="resources/css/feat-c.css">
-    <script src="WebContent/app.js"></script>
-</head>
-<bod>
+    <link rel="stylesheet" type="text/css" href="resources/css/feat-c.css"> </head>
+
+<body>
     <div class="container-fluid">
         <div id="d1" class="row">
             <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
@@ -24,7 +23,7 @@
                         <div class="triangulo_inf pt"></div>
                     </div>
                     <div class="col-lg-7 col-md-5 col-sm-7 col-xs-7">
-                        <image class="imglc abst" src="resources/img/logo4.png">
+                        <image ng-click="gohome()"  class="imglc abst" src="resources/img/logo4.png">
                     </div>
                 </div>
                 <div class="row">
@@ -151,14 +150,14 @@
                     <div class="col-lg-2 col-sm-3 col-md-2 col-xs-3">
                         <div class="numbers" data-size="100">
                             <ul class="nmb">
-                                <li class="docn"><strong class="fnmb"> 0</strong>de documentos creados</li>
+                                <li class="docn" id="about-d" ><strong class="fnmb" >0</strong>documentos creados</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-2 col-sm-2 col-md-2 col-xs-3">
                         <div class="numbers" data-size="100">
                             <ul class="nmb">
-                                <li class="center"><strong class="fnmb">0K</strong>de usuarios</li>
+                                <li class="center" id="about-u"><strong class="fnmb" >0</strong>usuarios</li>
                             </ul>
                         </div>
                     </div>
@@ -199,7 +198,7 @@
                     <br> </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 center">
-                        <button class="btn btn-info regis">Regístrate, es gratuito</button>
+                        <button ng-click="register()" class="btn btn-info regis">Regístrate, es gratuito</button>
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -226,6 +225,6 @@
         </div>
     </div>
     </div>
-</bod>
+    </bod>
 
 </html>
